@@ -22,8 +22,9 @@ endef
 define AESD_ASSIGNMENTS2_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket
-	#cd $(TARGET_DIR)
-	#mkdir ./etc/init.d/rc0.d
+	cd $(TARGET_DIR)
+	mkdir ./etc/init.d || echo "OK already exists"
+	chmod 755 /etc/init.d
 	#mkdir ./etc/init.d/rc5.d
 	#mkdir ./etc/init.d/rc6.d
 	#ln -s ./etc/init.d/aesdsocket-start-stop ./etc/init.d/rc5.d/S99aesdsocket

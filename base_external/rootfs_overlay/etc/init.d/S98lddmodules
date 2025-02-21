@@ -1,0 +1,11 @@
+#! /bin/sh
+
+case "$1" in
+        stop)
+        /module_unload
+        exit 0
+        ;;
+esac
+/module_load
+exit 0
+

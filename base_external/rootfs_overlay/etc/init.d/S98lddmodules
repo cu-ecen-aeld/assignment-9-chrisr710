@@ -2,10 +2,10 @@
 
 case "$1" in
         stop)
-        /module_unload
+        /aesdchar_unload
         exit 0
         ;;
 esac
-/module_load
+/aesdchar_load
 exit 0
 

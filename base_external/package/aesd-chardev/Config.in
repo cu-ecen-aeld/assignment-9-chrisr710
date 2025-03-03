@@ -2,5 +2,5 @@
 config BR2_PACKAGE_AESD_CHARDEV
 	bool "aesd-chardev"
 	help
-	  Adds the aesd-chardev device.
+	  Adds the aesd_chardev device.
 	  Used to understand buildroot external trees and package builds.

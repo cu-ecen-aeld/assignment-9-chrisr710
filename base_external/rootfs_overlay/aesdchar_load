@@ -13,5 +13,5 @@ rm -f /dev/${device}
 echo mknod...
 mknod /dev/${device} c $major 0
 chmod 664 /dev/${device}
-echo "IS IT HERE?"
+#echo "IS IT HERE?"
 ls -ll /dev/aesdchar

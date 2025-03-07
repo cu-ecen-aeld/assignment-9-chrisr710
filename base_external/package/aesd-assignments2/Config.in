@@ -1,6 +1,0 @@
-
-config BR2_PACKAGE_AESD_ASSIGNMENTS2
-	bool "aesd-assignments2"
-	help
-	  Includes aesdsocket in the kernel image.
-	  Used to understand buildroot external trees and package builds.
